@@ -1,0 +1,38 @@
+\newcommand{\Z}{\ensuremath\mathbb{Z}}
+\newcommand{\Zp}{\ensuremath\Z_{\ge1}}
+\newcommand{\R}{\ensuremath\mathbb{R}}
+\newcommand{\Q}{\ensuremath\mathbb{Q}}
+
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+
+\DeclarePairedDelimiter\rB{(}{)}
+\DeclarePairedDelimiter\sB{[}{]}
+\DeclarePairedDelimiter\cB{\{}{\}}
+\DeclarePairedDelimiter\aB{\langle}{\rangle}
+
+\newcommand{\sep}{\underline{\phantom{aaaaa}}}
+
+\newcommand{\defn}{\underline{Def'n:}\ }
+\newcommand{\note}{\underline{Note:}\ }
+\newcommand{\claim}{\underline{Claim:}\ }
+\newcommand{\thm}{\underline{Theorem:}\ }
+\newcommand{\thmn}[1]{\thm(\textbf{#1})\ }
+\newcommand{\pf}{\underline{Proof:}\ }
+\newcommand{\cor}{\underline{Corollary:}\ }
+\newcommand{\eg}{\underline{E.g.:}\ }
+\newcommand{\ex}{\underline{Exercise:}\ }
+
+\newcommand{\rkt}[1]{\mintinline{racket}{#1}}
+
+\newcommand{\yeah}{\includegraphics[height=.9em]{yeah.png}}
+
+\newcounter{case}
+
+\newenvironment{caseproof}[1]
+  {\setcounter{case}{0}\setlength{\leftskip}{.5cm}\par
+  #1}
+  
+\newcommand{\case}[1]{\hspace{-.5cm}\stepcounter{case}\textit{Case \arabic{case}:} #1}

@@ -1,0 +1,40 @@
+\newcommand{\thetitle}{HELLO 420 Winter 2019}
+\newcommand{\theprof}{John Doe}
+\newcommand{\theemail}{jdoe@uwaterloo.ca}
+
+\title{
+    \vspace*{-48pt}\thetitle \\\vspace{8pt}
+    \Large{
+        Professor \theprof\\ \href{mailto:\theemail}{\texttt{\theemail}} \\
+        <Office>, <DOW of hours> <Start>--<End>
+    }
+    \vspace{-12pt}
+}
+\date{\vspace{-12pt}\DTMdate{2019-01-01} -- \DTMdate{2019-01-01}}
+
+
+\usepackage[margin=1in]{geometry}
+\usepackage[en-US]{datetime2}
+\usepackage{fontspec,graphicx,mathtools,amsmath,amsfonts,amssymb,enumitem,hyperref,parskip,fancyhdr,tikz,tikzsymbols,setspace,minted}
+
+% Macros
+
+\input{preamble/macros.tex}
+
+% Package setups
+
+\renewcommand{\chaptername}{Unit}
+
+\allowdisplaybreaks
+
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead[\leftmark]{Professor \theprof}
+\rhead[\thetitle]{\nouppercase\rightmark}
+\cfoot{\thepage}
+
+\setstretch{1.15}
+
+\setminted{linenos,breaklines,autogobble,baselinestretch=1.08}
